@@ -5,7 +5,7 @@ Feature: Liking answers
 
   Background:
     Given I am user
-      And There is a question with answer
+      And There is a new question with answer
 
   Scenario: Liking answer
      When I like that answer

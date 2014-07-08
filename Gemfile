@@ -23,7 +23,7 @@ group :development do
 end
 
 # testing
-group :test do
+group :test , :development do
   gem "database_cleaner",   "~> 1.2.0"
   gem "capybara",           github: "jnicklas/capybara" # master until rspec3 fixes are released #~> 2.2.0"
   gem "poltergeist",        "~> 1.5.0"

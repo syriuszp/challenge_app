@@ -23,7 +23,7 @@ module ChallengeApp
     config.generators do |g|
       g.template_engine :slim
       #RB
-      g.test_framework :rspec
+      #g.test_framework :rspec
       #RB
     end
   end

@@ -1,0 +1,7 @@
+FactoryGirl.define do
+  factory :test do
+    id 3
+    name "Test name"
+    value 1243,14
+  end
+end
