@@ -1,0 +1,13 @@
+.answer id="answer-#{@answer.id}"
+  .contents= answer.contents
+  .details
+    '  Likes:
+    = answer.like.count 
+    '  Answered on
+    = l(answer.created_at, format: :long)
+    '  by
+    = link_to answer.user, user_path(answer.user)
+    
+= form_for :like do |f|
+  .actions= f.submit 'Like'
+

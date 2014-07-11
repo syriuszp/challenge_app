@@ -1,0 +1,2 @@
+What we have to test in Rails View ?
+How drive Rails view development using RSpec ?

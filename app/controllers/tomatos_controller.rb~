@@ -1,0 +1,5 @@
+class TomatosController < ApplicationController
+  def index
+    @z = render_to_string
+  end
+end

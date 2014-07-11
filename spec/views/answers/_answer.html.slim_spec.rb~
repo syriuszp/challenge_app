@@ -1,0 +1,15 @@
+require "spec_helper"
+
+describe "answers/_answer" do
+  it "infers the controller action" do
+    assign(:answer, FactoryGirl.create(:answer))
+    #assign(:answer, double("Answer",id: 1))
+    #@answer = Answer.find_by(id: 1)
+    #puts @answer
+    
+    #assign(:a, stub_model(Answer))
+    render partial: "answer", locals: {answer: @bingo}  
+    #render
+    #expect(controller.request.path_parameters[:action]).to eq("post")
+  end
+end

@@ -1,0 +1,8 @@
+require "spec_helper"
+
+describe "views/_answers" do
+  it "infers the controller action" do
+    render
+    expect(controller.request.path_parameters[:action]).to eq("post")
+  end
+end
