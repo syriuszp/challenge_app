@@ -2,44 +2,42 @@ require 'spec_helper'
 
 describe Like do
   
-   before {@like = FactoryGirl.create(:like)}  
-   subject {@like}   
-   
-   it do
-     expect(@like).to respond_to(:answer_id)
-   end
-     
-   it do
-     #when subject defined we can use should matcher instead of expect syntax
-     should respond_to(:user_id)
-   end  
-   
-   it "validates answer_id presence" do
-     @like.answer_id = ''
-     #expect(@like).to_not be_valid
-     should_not be_valid
+   before(:each) do
+     @like = build(:like)
    end
    
-   it "validates user_id presence" do
-     @like.user_id = ''
-     expect(@like).to_not be_valid
-     #should_not be_valid
+   it "is valid with answer and user" do
+     expect(@like).to be_valid
    end
    
-   it "delete likes if answer destroyed" do
-     @answer = FactoryGirl.create(:answer, id: 10)
-     @likeanswer = FactoryGirl.create(:like,answer_id: @answer.id)
+   it "is invalid without answer" do
+     @like.answer_id = nil
+     expect(@like).to have(1).errors_on(:answer_id)
+   end
+   
+   it "is invalid without user" do
+     @like.user_id = nil
+     expect(@like).to have(1).errors_on(:user_id)
+   end
+   
+   it "is removed for destroyed answer its belongs to" do
+     @answer = create(:answer)
+     @like.save
      @answer.destroy
-     expect(Like.where(:answer_id => @answer.id).count).to eq 0   
+     expect(Like.all.count).to eq 0 
    end 
    
-   it "only one like can be created for given answer and user" do
-     @like2 = FactoryGirl.build(:like)
-     expect(@like2).to_not be_valid
+   it "is unique for given answer per user" do
+     @like.save
+     @like = build(:like)
+     expect(@like).to_not be_valid
    end
    
-   it "can not like my own answer" do
-     pending "TBD"
+   it "is invalid for answer user is author of" do  
+     @answer = create(:answer)
+     @like.user_id = @answer.user_id
+     @like.save
+     expect(@like).to_not be_valid
    end
     
 end

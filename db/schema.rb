@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(version: 20140707165430) do
     t.datetime "updated_at"
   end
 
+  add_index "likes", ["answer_id"], name: "index_likes_on_answer_id"
+  add_index "likes", ["user_id"], name: "index_likes_on_user_id"
+
   create_table "questions", force: true do |t|
     t.string   "title"
     t.text     "contents"
