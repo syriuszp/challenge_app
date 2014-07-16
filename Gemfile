@@ -21,6 +21,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 group :development do
   gem 'spring'
 end
+#gem 'pry-rails', :group => :development
+
 
 # testing
 group :test , :development do
@@ -32,5 +34,8 @@ group :test , :development do
   gem "factory_girl"
   gem "rspec-rails"
   gem "launchy"
+  gem 'guard-rspec', require: false
+  gem 'spring-commands-rspec'
+  gem 'rspec-collection_matchers'
 end
 

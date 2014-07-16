@@ -1,0 +1,5 @@
+.likes id="#likes-#{answer.id}"
+  = form_tag({controller: "likes",action: "create", like: {user_id: current_user, answer_id: answer.id}}, method: "post") do
+    = submit_tag(">>", id: "like_of_answer_form")
+    '
+    = pluralize(answer.likes_count, 'like')

@@ -1,14 +1,8 @@
 .answer id="answer-#{answer.id}"
   .contents= answer.contents
   .details
-    = pluralize(answer.like.count, 'like')
-    = form_tag({controller: "likes", action: "create", user: current_user, answer: answer.id, question: answer.question}, method: "post") do
-      = submit_tag("Like")
+    = render partial: "likes/like", locals: {answer: answer}
     '  Answered on
     = l(answer.created_at, format: :long)
     '  by
     = link_to answer.user, user_path(answer.user)
-    
-    
-    
-    

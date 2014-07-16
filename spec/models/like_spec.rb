@@ -23,8 +23,9 @@ describe Like do
    it "is removed for destroyed answer its belongs to" do
      @answer = create(:answer)
      @like.save
-     @answer.destroy
-     expect(Like.all.count).to eq 0 
+     #@answer.destroy
+     #expect(Like.all.count).to eq 0
+     expect{@answer.destroy}.to change(Like, :count).by(-1) 
    end 
    
    it "is unique for given answer per user" do
@@ -40,4 +41,4 @@ describe Like do
      expect(@like).to_not be_valid
    end
     
-end
+end 

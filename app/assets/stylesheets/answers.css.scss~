@@ -1,13 +1,13 @@
-.question {
+.answer {
   .details {
     font-size: smaller;
     color: #999;
-    display: inline;
 
     a {
-      color: #999;
+      color: #799;
     }
   }
 
   margin-bottom: 10px;
 }
+

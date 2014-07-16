@@ -6,7 +6,7 @@
     background-color: #ccc;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    border-radius:6px;
+    border-radius:9px;
     color: #fff;
     font-family: 'Oswald';
     font-size: 11px;

@@ -1,6 +1,5 @@
 And(/^I like that answer$/) do
   visit question_path(@answer.question)
-  save_and_open_page
   within "#answer-#{@answer.id}" do
     click_on "Like"
   end
