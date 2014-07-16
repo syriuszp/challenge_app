@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :answer do
-    id 1
     contents "Best answer ever"
     question
     user
+    accepted false
   end
 end

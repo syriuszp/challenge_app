@@ -2,7 +2,17 @@ require 'spec_helper'
 
 describe Answer do
 
+  before(:each) do
+     @answer = build(:answer)
+   end
 
+  it "is valid with question_id, user_id contents and accepted" do
+    expect(@answer).to be_valid
+  end
+  
+  it "TBD" do
+    expected(pending)
+  end
 =begin  
    before(:each) do
      @like = build(:like)

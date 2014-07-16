@@ -3,5 +3,6 @@ FactoryGirl.define do
     contents "Best answer ever"
     question
     user
+    accepted false
   end
 end
