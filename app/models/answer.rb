@@ -7,5 +7,13 @@ class Answer < ActiveRecord::Base
   def likes_count
     self.like.count
   end
+  
+  def accept
+    self.update_attributes(accepted: true)
+  end
+  
+  def accepted?
+    self.accepted
+  end  
 
 end

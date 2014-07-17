@@ -1,6 +1,7 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_question
+  before_action :set_question, only: [:create, :update]
+  before_action :set_answer, only: [:update]
 
   def create
     @answer = Answer.new(answer_params)
@@ -14,10 +15,23 @@ class AnswersController < ApplicationController
     end
   end
 
+  def update
+    if @answer.accept
+      redirect_to question_path(@question)
+    else
+      logger.debug "Answer accept error messages: #{@answer.errors.messages}"
+      redirect_to question_path(@question), alert: "Could not accept an answer"
+    end  
+  end
+
   private
 
     def set_question
       @question = Question.find(params[:question_id])
+    end
+    
+    def set_answer
+      @answer = Answer.find(params[:answer_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

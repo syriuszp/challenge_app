@@ -2,6 +2,12 @@
   .contents= answer.contents
   .details
     = render partial: "likes/like", locals: {answer: answer}
+    = form_tag({controller: "answers", action: "update", answer_id: answer.id, question_id: answer.question_id}, method: "patch") do
+      '
+      = submit_tag("Accept", id: 'accept_answer_form')
+      '
+      = "Accepted" if answer.accepted?
+      '
     '  Answered on
     = l(answer.created_at, format: :long)
     '  by

@@ -10,9 +10,21 @@ describe Answer do
     expect(@answer).to be_valid
   end
   
-  it "TBD" do
+  it "is in not accepted status by default" do
     expected(pending)
   end
+  
+  it "is accepted by user" do
+    @answer.save
+    @answer.accept
+   
+    expect(@answer.accepted?).to eq true
+  end
+  
+  it "can not be accepted by others than question author" do
+    expected(pending)
+  end
+    
 =begin  
    before(:each) do
      @like = build(:like)
