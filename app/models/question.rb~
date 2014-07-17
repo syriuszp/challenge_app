@@ -1,5 +1,8 @@
 class Question < ActiveRecord::Base
   belongs_to :user
   has_many :answers
-  acts_as_votable
+  
+  def answer_accepted?
+    (Answer.where(question_id: self.id).select {|answer| answer.accepted?}).empty? ? true : false
+  end
 end

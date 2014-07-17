@@ -8,7 +8,6 @@ class QuestionsController < ApplicationController
 
   def show
     @answer = Answer.new
-    #@likes = 2
   end
 
   def new

@@ -18,7 +18,7 @@
   - else
     '  There are no answers to this question.
   
-  - if ! @question.answer_accepted?
+  - if @question.answer_accepted?
     h3 Add answer
   
     = form_for [@question, @answer] do |f|

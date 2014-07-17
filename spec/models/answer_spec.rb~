@@ -15,13 +15,17 @@ describe Answer do
   end
   
   it "is accepted by user" do
-    @answer.save
     @answer.accept
-   
     expect(@answer.accepted?).to eq true
   end
   
   it "can not be accepted by others than question author" do
+    user_first = create(:user)
+    user_second = create(:user)
+    sign_in user_first
+    @question = create(:question, user: user_first)
+    @answer = create(:answer, quetsion_id: @question.id,contents: "test",  user_id: user_first.id)
+    @answer.accept
     expected(pending)
   end
     

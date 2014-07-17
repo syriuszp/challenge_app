@@ -9,11 +9,13 @@ class Answer < ActiveRecord::Base
   end
   
   def accept
-    self.update_attributes(accepted: true)
+    if  (Answer.where(question_id: self.question_id).select {|answer| answer.accepted?}).empty? 
+      self.update_attributes(accepted: true)
+    end  
   end
   
   def accepted?
     self.accepted
-  end  
+  end
 
 end

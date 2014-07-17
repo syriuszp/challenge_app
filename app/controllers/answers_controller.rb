@@ -16,11 +16,15 @@ class AnswersController < ApplicationController
   end
 
   def update
-    if @answer.accept
-      redirect_to question_path(@question)
+    
+    if current_user.id == @answer.question.user.id
+      if @answer.accept
+        redirect_to question_path(@question)
+      else
+        redirect_to question_path(@question), alert: "Could not accept an answer #{@answer.errors.messages}"
+      end
     else
-      logger.debug "Answer accept error messages: #{@answer.errors.messages}"
-      redirect_to question_path(@question), alert: "Could not accept an answer"
+      redirect_to question_path(@question), alert: "Only question owner can accept the answer"
     end  
   end
 
