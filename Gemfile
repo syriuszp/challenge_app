@@ -2,8 +2,13 @@ source 'https://rubygems.org'
 
 # core
 gem 'rails', '4.1.1'
-gem 'sqlite3'
 gem 'devise'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 
 # frontend
 gem 'slim-rails'
@@ -17,15 +22,9 @@ gem 'jbuilder', '~> 2.0'
 # doc
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# development
-group :development do
-  gem 'spring'
-end
-#gem 'pry-rails', :group => :development
-
-
-# testing
+# testing and development
 group :test , :development do
+  gem 'sqlite3'
   gem "database_cleaner",   "~> 1.2.0"
   gem "capybara",           github: "jnicklas/capybara" # master until rspec3 fixes are released #~> 2.2.0"
   gem "poltergeist",        "~> 1.5.0"
@@ -36,6 +35,7 @@ group :test , :development do
   gem "launchy"
   gem 'guard-rspec', require: false
   gem 'spring-commands-rspec'
+  gem 'spring'
   gem 'rspec-collection_matchers'
 end
 
