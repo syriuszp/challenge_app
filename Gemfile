@@ -23,6 +23,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # testing and development
+
+gem "bullet", :group => "development"
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 group :test , :development do
   gem 'sqlite3'
   gem "database_cleaner",   "~> 1.2.0"

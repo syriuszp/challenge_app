@@ -22,10 +22,10 @@ class User < ActiveRecord::Base
   end
   
   def earn_for_like
-    puts "P3000 :#{self.points.inspect}"
+    puts "I am in earn_for_like method #{self.inspect}"
     self.points += 5
-    puts "P4000 :#{self.points.inspect}"
+    puts "Just addedd 5 points #{self.inspect}"
     self.save
-    puts "P5000 :#{self.points.inspect}"
+    puts "Points stats after save in db #{self.inspect}"
   end
 end

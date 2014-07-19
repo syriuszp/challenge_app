@@ -21,7 +21,8 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
     @question.user = current_user
 
-    if @question.save
+    if current_user.enough_for_question? && @question.save
+      current_user.pay_for_question
       redirect_to @question, notice: 'Question was successfully created.'
     else
       render :new

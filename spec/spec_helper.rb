@@ -5,6 +5,11 @@ require 'rspec/rails'
 #require 'rspec/autorun'
 require 'rspec/collection_matchers'
 
+#RB
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+#RB end
+
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
