@@ -31,3 +31,8 @@ Feature: Points
     Given I added an answer
      When This answer is accepted
      Then I should have 125 points earned
+     
+  Scenario: No points to create question
+    Given I create 10 questions
+     When I create next question
+     Then I should see error message "0 points is not enough"

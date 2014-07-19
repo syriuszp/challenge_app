@@ -11,3 +11,16 @@ Given(/^I have (\d+) points$/) do |points|
   @user.save!
 end
 
+Given(/^I create (\d+) questions$/) do |a|
+  a.to_i.times do 
+    steps %Q{When I create a question}
+  end
+end
+
+When(/^I create next question$/) do
+  steps %Q{When I create a question}
+end
+
+Then(/^I should see error message "(.*?)"$/) do |message|
+  expect(page).to have_content message
+end
