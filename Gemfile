@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # testing and development
 
 gem "bullet", :group => "development"
+gem "rails_best_practices", :group => "development"
 gem "codeclimate-test-reporter", group: :test, require: nil
 
 group :test , :development do
