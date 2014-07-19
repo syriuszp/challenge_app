@@ -40,7 +40,7 @@ class AnswersController < ApplicationController
     end
     
     def set_answer
-      @answer = Answer.find(params[:answer_id])
+      @answer = Answer.find(params[:answer_id]).includes(:user)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
