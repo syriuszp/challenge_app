@@ -38,7 +38,7 @@ Rails.application.configure do
   #Configure bullet gem to find quesries problems (n+1, lazy when eager on vv, etc)
   config.after_initialize do
     Bullet.enable = true
-    Bullet.alert = true
+    #Bullet.alert = true
     Bullet.bullet_logger = true
     Bullet.console = true
     #Bullet.growl = true
