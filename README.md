@@ -2,6 +2,9 @@
 
 [![Code Climate](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/gpa.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
 
+[![Test Coverage](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/coverage.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
+
+
 Hello, there! This is a challenge application that will test your practical knowledge of following tools:
 
 * Ruby programming language
