@@ -30,5 +30,4 @@ end
 
 And(/^I added an answer$/) do
   @answer = create(:answer)
-  @answer_author = User.find(@answer.user_id)
 end

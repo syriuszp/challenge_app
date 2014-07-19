@@ -12,7 +12,6 @@ class User < ActiveRecord::Base
   end
   
   def pay_for_question
-    #logger.debug "Pprawne wywolanie dla uzytwkownika #{self}"
     self.points -= 10
     self.save
   end
@@ -22,10 +21,13 @@ class User < ActiveRecord::Base
   end
   
   def earn_for_like
-    puts "P3000 :#{self.points.inspect}"
     self.points += 5
-    puts "P4000 :#{self.points.inspect}"
     self.save
-    puts "P5000 :#{self.points.inspect}"
   end
+  
+  def earn_for_accept
+    self.points += 25
+    self.save
+  end
+  
 end

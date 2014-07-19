@@ -3,9 +3,7 @@ class LikesController < ApplicationController
   
   def create
     if (Like.create(like_params)).valid?
-      puts "P2000: #{set_answer_author.points.inspect}"
       set_answer_author.earn_for_like
-      puts "P6000: #{set_answer_author.points.inspect}"
     end  
     redirect_to question_path set_question_id
   end

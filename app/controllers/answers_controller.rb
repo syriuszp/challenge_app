@@ -19,6 +19,7 @@ class AnswersController < ApplicationController
     
     if current_user.id == @answer.question.user.id
       if @answer.accept
+        set_answer_author.earn_for_accept
         redirect_to question_path(@question)
       else
         redirect_to question_path(@question), alert: "Could not accept an answer #{@answer.errors.messages}"
@@ -29,7 +30,11 @@ class AnswersController < ApplicationController
   end
 
   private
-
+  
+    def set_answer_author
+      @answer.user
+    end
+    
     def set_question
       @question = Question.find(params[:question_id])
     end
