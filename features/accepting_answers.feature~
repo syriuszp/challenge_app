@@ -1,4 +1,4 @@
-Feature: Accepting answers
+Feature:
   When someone adds a correct answer to my question
   I want to accept this answer to thank the author
 

@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable, :omniauthable
   # :recoverable, :rememberable and :trackable
   devise :database_authenticatable, :registerable, :validatable
+  attr_accessible :points
 
   has_many :questions
   has_many :answers
@@ -24,4 +25,10 @@ class User < ActiveRecord::Base
     self.points += 5
     self.save
   end
+  
+  def earn_for_accept
+    self.points += 25
+    self.save
+  end
+  
 end

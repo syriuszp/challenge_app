@@ -2,6 +2,7 @@ require 'securerandom'
 
 When(/^I create a profile$/) do
   email = "email#{SecureRandom.hex(12)}@example.com"
+  puts email
   
   visit new_user_registration_path
   
@@ -11,6 +12,9 @@ When(/^I create a profile$/) do
   click_button "Sign up"
   
   @user = User.find_by(email: email)
-  
+  puts @user.inspect
+  #@user.save!
+  #@user.reload
+  puts @user.inspect
 end
 
