@@ -6,15 +6,16 @@
   p
     = @question.contents
 
-  .links
-    = link_to 'Edit', edit_question_path(@question)
-    '  |
-    = link_to 'Delete', question_path(@question, method: :delete)
+  - if current_user == @question.author
+    .links
+      = button_to 'Edit', edit_question_path(@question)
+      '
+      = button_to 'Delete', question_path(@question), method: :delete,  :confirm => 'Are you sure?'
 
   h3 Answers
   
   - if @question.answers.any?
-    = render @question.answers
+    = render @question.answers.includes(:user)
   - else
     '  There are no answers to this question.
   

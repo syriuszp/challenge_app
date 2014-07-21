@@ -14,7 +14,7 @@ Feature: Questions
   Scenario: Delete question
      When I created a question
      And I press "Delete" link
-     Then I should see message "Question was successfully destroyed."
+     Then I should see message "Question successfully deleted"
      
 
   Scenario: Creating questions with empty title

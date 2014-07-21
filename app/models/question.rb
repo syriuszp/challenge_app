@@ -2,7 +2,7 @@ class Question < ActiveRecord::Base
   validates_presence_of :title
   
   belongs_to :user
-  has_many :answers
+  has_many :answers, dependent: :delete_all
   
   
   def answer_accepted?

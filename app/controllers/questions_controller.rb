@@ -41,8 +41,13 @@ class QuestionsController < ApplicationController
   end
 
   def destroy
-    @question.destroy
-    redirect_to questions_url, notice: 'Question was successfully destroyed.'
+    if @question.destroy
+      #flash.now[:notice] = 'Question was successfully destroyed.' 
+      #render :index
+      redirect_to questions_url, notice: 'Question was successfully destroyed.'
+    else  
+      redirect_to question_url, alert: 'Could not destoy the question'
+    end  
   end
 
   private

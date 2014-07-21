@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     resources :answers, only: [:create]
   end
   
-  resources :answer, only: [:update]
+  resources :answers, only: [:update]
   
   resources :users, only: [:show]
   

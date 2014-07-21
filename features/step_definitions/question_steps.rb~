@@ -55,7 +55,7 @@ end
 
 When(/^I press "(.*?)" link$/) do |link|
   visit question_path @question
-  
+  save_and_open_page
   click_on link
 end
 
