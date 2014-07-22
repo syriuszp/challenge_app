@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cla",
+				"cla	class .. initialize .. end"
+			],
+			[
+				"t",
+				"to_not"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "features/liking_answers.feature",
+			"settings":
+			{
+				"buffer_size": 407,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Feature: Points\n  User are awarded points for certain actions\n  And use the points to create questions.\n  When they accumulate certain amount of points\n  Then they are awarded badges that are visible in their profiles.\n\n  User receives 100 free points upon registration.\n  Creating a question costs 10 points.\n  When user's answer is likes she receives 5 points.\n  When user's answer accepted is she receives 25 points.\n\n  If user does not have enough points, she can't create a question.\n\n  When user accumulate 1000 points she receives a \"Superstar\" badge.\n  Badges are awarded indifinitely and do not disappear even when user loses his points.\n\n  Background:\n    Given I am user\n      And I have 100 points\n\n  Scenario: Creating question\n     When I create a question\n     Then I should have 90 points\n\n  Scenario: Having answer liked\n    Given I added an answer\n     When This answer is liked\n     Then I should have 105 points earned\n\n  Scenario: Having answer accepted\n    Given I added an answer\n     When This answer is accepted\n     Then I should have 125 points earned\n     \n  Scenario: No points to create question\n    Given I create 10 questions\n     When I create next question\n     Then I should see error message \"0 points is not enough\"\n",
+			"file": "features/points.feature",
+			"file_size": 1253,
+			"file_write_time": 1405966629000000,
+			"settings":
+			{
+				"buffer_size": 1253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/step_definitions/points_steps.rb",
+			"settings":
+			{
+				"buffer_size": 599,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "features/step_definitions/liking_answer_steps.rb",
+			"settings":
+			{
+				"buffer_size": 839,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/questions/edit.html.slim",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/robert/projects/challenge_app/app/views/users/_answer.html.slim",
+		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
+		"/home/robert/projects/challenge_app/db/schema.rb",
+		"/home/robert/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/robert/.config/sublime-text-2/Packages/RubyTest/Default.sublime-keymap",
+		"/home/robert/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
+		"/home/robert/projects/challenge_app/spec/models/like_spec.rb",
+		"/home/robert/projects/challenge_app/spec/models/Test Results",
+		"/home/robert/projects/challenge_app/features/Test Results",
+		"/home/robert/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
+		"/home/robert/.config/sublime-text-2/Packages/RubyTest/RubyTest.sublime-settings",
+		"/home/robert/projects/challenge_app/features/liking_answers.feature",
+		"/home/robert/projects/challenge_app/_features/liking_answers.feature",
+		"/home/robert/projects/challenge_app/app/models/like.rb",
+		"/home/robert/projects/challenge_app/app/models/answer.rb",
+		"/home/robert/projects/challenge_app/app/controllers/answers_controller.rb",
+		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim~"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"focus"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "features/liking_answers.feature",
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "features/points.feature",
+					"settings":
+					{
+						"buffer_size": 1253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								855,
+								855
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "features/step_definitions/points_steps.rb",
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "features/step_definitions/liking_answer_steps.rb",
+					"settings":
+					{
+						"buffer_size": 839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/questions/edit.html.slim",
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.492142857143,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 333.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_answer",
+				"app/views/users/_answer.html.slim"
+			],
+			[
+				"_an",
+				"app/views/answers/_answer.html.slim"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"vie",
+				"app/views/questions/edit.html.slim"
+			],
+			[
+				"po",
+				"features/points.feature"
+			],
+			[
+				"ls",
+				"spec/models/like_spec.rb"
+			],
+			[
+				"las",
+				"features/step_definitions/liking_answer_steps.rb"
+			],
+			[
+				"la",
+				"features/liking_answers.feature"
+			],
+			[
+				"lik",
+				"app/models/like.rb"
+			],
+			[
+				"mo",
+				"app/models/answer.rb"
+			],
+			[
+				"v",
+				"app/views/likes/_like.html.slim~"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true
+}

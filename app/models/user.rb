@@ -4,9 +4,31 @@ class User < ActiveRecord::Base
   # :recoverable, :rememberable and :trackable
   devise :database_authenticatable, :registerable, :validatable
 
-
   has_many :questions
   has_many :answers
+
+  validates :username, :uniqueness => {:case_sensitive => false}
+
+  attr_accessor :login
+
+
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    if login = conditions.delete(:login)
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+    else
+      where(conditions).first
+    end
+  end
+
+
+  def login=(login)
+      @login = login
+  end
+
+  def login
+    @login || self.username || self.email
+  end
 
   def to_s
     email
