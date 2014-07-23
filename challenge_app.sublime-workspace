@@ -35,12 +35,16 @@
 		"selected_items":
 		[
 			[
-				"",
-				"Project: Close"
-			],
-			[
 				"p",
 				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"git s",
+				"Git: Status"
 			],
 			[
 				"gitstat",
@@ -55,7 +59,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 448.0
 	},
 	"console":
 	{
@@ -72,6 +76,14 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/bootstrap_and_overrides.css.less",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/__________application.css.scss",
+		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
+		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/_______application.css",
+		"/home/robert/projects/challenge_app/challenge_app.sublime-project",
+		"/home/robert/projects/challenge_app/app/views/users/show.html.slim",
 		"/home/robert/projects/challenge_app/spec/spec_helper.rb",
 		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
 		"/home/robert/projects/challenge_app/features/adding_username.feature",
@@ -84,7 +96,6 @@
 		"/home/robert/projects/challenge_app/spec/factories/user_factory.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/auth_steps.rb",
-		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
 		"/home/robert/projects/challenge_app/app/helpers/application_helper.rb",
 		"/home/robert/projects/challenge_app/features/registration.feature",
 		"/home/robert/projects/challenge_app/app/controllers/users_controller.rb",
@@ -164,7 +175,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -186,7 +197,7 @@
 		"cols":
 		[
 			0.0,
-			0.492142857143,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -210,6 +221,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"layout/a",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"app",
+				"app/assets/stylesheets/application.css.scss"
+			],
 			[
 				"sh",
 				"spec/spec_helper.rb"
@@ -375,16 +394,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 260.0,
 	"status_bar_visible": true
 }
