@@ -1,5 +1,6 @@
 .user id="user-#{@user.id}"
-  h2= @user
+  h2= @user.username
+  h5= pluralize(@user.points,'points')
 
   .questions
     h3 Questions
@@ -14,7 +15,7 @@
     h3 Answers
 
     - if @user.answers.any?
-      - @user.answers.each do |answer|
+      - @user.answers.includes(:question).each do |answer|
         = render 'answer', answer: answer
     - else
       '  This user has not added any answers.

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"user"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"f",
+				"fill_in"
+			],
+			[
 				"cla",
 				"cla	class .. initialize .. end"
 			],
@@ -15,67 +27,24 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "features/liking_answers.feature",
-			"settings":
-			{
-				"buffer_size": 407,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Feature: Points\n  User are awarded points for certain actions\n  And use the points to create questions.\n  When they accumulate certain amount of points\n  Then they are awarded badges that are visible in their profiles.\n\n  User receives 100 free points upon registration.\n  Creating a question costs 10 points.\n  When user's answer is likes she receives 5 points.\n  When user's answer accepted is she receives 25 points.\n\n  If user does not have enough points, she can't create a question.\n\n  When user accumulate 1000 points she receives a \"Superstar\" badge.\n  Badges are awarded indifinitely and do not disappear even when user loses his points.\n\n  Background:\n    Given I am user\n      And I have 100 points\n\n  Scenario: Creating question\n     When I create a question\n     Then I should have 90 points\n\n  Scenario: Having answer liked\n    Given I added an answer\n     When This answer is liked\n     Then I should have 105 points earned\n\n  Scenario: Having answer accepted\n    Given I added an answer\n     When This answer is accepted\n     Then I should have 125 points earned\n     \n  Scenario: No points to create question\n    Given I create 10 questions\n     When I create next question\n     Then I should see error message \"0 points is not enough\"\n",
-			"file": "features/points.feature",
-			"file_size": 1253,
-			"file_write_time": 1405966629000000,
-			"settings":
-			{
-				"buffer_size": 1253,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "features/step_definitions/points_steps.rb",
-			"settings":
-			{
-				"buffer_size": 599,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "features/step_definitions/liking_answer_steps.rb",
-			"settings":
-			{
-				"buffer_size": 839,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/questions/edit.html.slim",
-			"settings":
-			{
-				"buffer_size": 125,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 75.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"gitstat",
-				"Git: Status"
-			],
-			[
 				"",
-				"Package Control: Install Package"
+				"Project: Close"
 			],
 			[
 				"p",
 				"Package Control: Install Package"
+			],
+			[
+				"gitstat",
+				"Git: Status"
 			],
 			[
 				"P",
@@ -86,7 +55,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 458.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -103,9 +72,34 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/spec/spec_helper.rb",
+		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
+		"/home/robert/projects/challenge_app/features/adding_username.feature",
+		"/home/robert/projects/challenge_app/features/step_definitions/adding_username_steps.rb",
+		"/home/robert/projects/challenge_app/features/step_definitions/points_steps.rb",
+		"/home/robert/projects/challenge_app/spec/support/authorization.rb",
+		"/home/robert/projects/challenge_app/features/step_definitions/registration_steps.rb",
+		"/home/robert/projects/challenge_app/features/points.feature",
+		"/home/robert/projects/challenge_app/app/views/devise/sessions/new.html.slim",
+		"/home/robert/projects/challenge_app/spec/factories/user_factory.rb",
+		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
+		"/home/robert/projects/challenge_app/features/step_definitions/auth_steps.rb",
+		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
+		"/home/robert/projects/challenge_app/app/helpers/application_helper.rb",
+		"/home/robert/projects/challenge_app/features/registration.feature",
+		"/home/robert/projects/challenge_app/app/controllers/users_controller.rb",
+		"/home/robert/projects/challenge_app/app/controllers/application_controller.rb",
+		"/home/robert/projects/challenge_app/app/models/user.rb",
+		"/home/robert/projects/challenge_app/config/initializers/devise.rb",
+		"/home/robert/projects/challenge_app/app/views/devise/registrations/new.html.slim",
+		"/home/robert/projects/challenge_app/app/views/devise/registrations/edit.html.slim",
+		"/home/robert/projects/challenge_app/config/locales/devise.en.yml",
+		"/home/robert/projects/challenge_app/db/schema.rb",
+		"/home/robert/projects/challenge_app/db/migrate/20140722080747_add_username_to_users.rb",
+		"/home/robert/projects/challenge_app/app/views/questions/edit.html.slim",
+		"/home/robert/projects/challenge_app/features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/app/views/users/_answer.html.slim",
 		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
-		"/home/robert/projects/challenge_app/db/schema.rb",
 		"/home/robert/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/RubyTest/Default.sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
@@ -114,7 +108,6 @@
 		"/home/robert/projects/challenge_app/features/Test Results",
 		"/home/robert/.config/sublime-text-2/Packages/User/Package Control.sublime-settings",
 		"/home/robert/.config/sublime-text-2/Packages/RubyTest/RubyTest.sublime-settings",
-		"/home/robert/projects/challenge_app/features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/_features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/app/models/like.rb",
 		"/home/robert/projects/challenge_app/app/models/answer.rb",
@@ -155,149 +148,13 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "features/liking_answers.feature",
-					"settings":
-					{
-						"buffer_size": 407,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								230,
-								230
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "features/points.feature",
-					"settings":
-					{
-						"buffer_size": 1253,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								855,
-								855
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Cucumber/Cucumber Plain Text Feature.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "features/step_definitions/points_steps.rb",
-					"settings":
-					{
-						"buffer_size": 599,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								599,
-								599
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 15.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 3,
-					"file": "features/step_definitions/liking_answer_steps.rb",
-					"settings":
-					{
-						"buffer_size": 839,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								551,
-								551
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/questions/edit.html.slim",
-					"settings":
-					{
-						"buffer_size": 125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -341,7 +198,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 333.0
+		"height": 454.0
 	},
 	"replace":
 	{
@@ -354,16 +211,132 @@
 		"selected_items":
 		[
 			[
+				"sh",
+				"spec/spec_helper.rb"
+			],
+			[
+				"addin",
+				"features/adding_username.feature"
+			],
+			[
+				"aut",
+				"spec/support/authorization.rb"
+			],
+			[
+				"reg",
+				"features/step_definitions/registration_steps.rb"
+			],
+			[
+				"ps",
+				"features/step_definitions/points_steps.rb"
+			],
+			[
+				"poin",
+				"features/points.feature"
+			],
+			[
+				"auth",
+				"spec/support/authorization.rb"
+			],
+			[
+				"aus",
+				"features/step_definitions/adding_username_steps.rb"
+			],
+			[
+				"session/n",
+				"app/views/devise/sessions/new.html.slim"
+			],
+			[
+				"shared/hea",
+				"app/views/shared/_header.html.slim"
+			],
+			[
+				"view/a",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"ah",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"as",
+				"features/step_definitions/auth_steps.rb"
+			],
+			[
+				"",
+				"spec/factories/user_factory.rb"
+			],
+			[
+				"fu",
+				"spec/factories/user_factory.rb"
+			],
+			[
+				"curre",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"shared/he",
+				"app/views/shared/_header.html.slim"
+			],
+			[
+				"view/app",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"session/",
+				"app/views/devise/registrations/new.html.slim"
+			],
+			[
+				"session",
+				"app/views/devise/sessions/new.html.slim"
+			],
+			[
+				"config/locales/dev",
+				"config/locales/devise.en.yml"
+			],
+			[
+				"registration/edit",
+				"app/views/devise/registrations/edit.html.slim"
+			],
+			[
+				"registration/new",
+				"app/views/devise/registrations/new.html.slim"
+			],
+			[
+				"session/new",
+				"app/views/devise/sessions/new.html.slim"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"appl",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"201407",
+				"db/migrate/20140722080747_add_username_to_users.rb"
+			],
+			[
+				"devi",
+				"config/initializers/devise.rb"
+			],
+			[
+				"regi",
+				"features/registration.feature"
+			],
+			[
 				"_answer",
 				"app/views/users/_answer.html.slim"
 			],
 			[
 				"_an",
 				"app/views/answers/_answer.html.slim"
-			],
-			[
-				"sche",
-				"db/schema.rb"
 			],
 			[
 				"vie",
