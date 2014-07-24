@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body { padding-top: 110px; }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -14,6 +17,7 @@
  *= require_self
  */
 
+/*
 body {
   background-color: #fff;
   color: #333;
@@ -109,3 +113,4 @@ div {
     color: #0c0;
   }
 }
+*/
