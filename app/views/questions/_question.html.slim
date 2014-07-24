@@ -1,3 +1,7 @@
 .question id="question-#{question.id}"
-  .title= link_to question.title, question_path(question)
-  = render "questions/details", question: question
+.panel.panel-default
+  .panel-heading
+    .panel-title
+	    .btn.btn-link.btn-lg= link_to question.title, question_path(question)
+    .panel-body
+		  = render "questions/details", question: question

@@ -1,16 +1,21 @@
 .question id="question-#{@question.id}"
-  h2= @question.title
+  
+  h3 Question
 
-  = render "details", question: @question
-
-  p
-    = @question.contents
-
-  - if current_user == @question.author
-    .links
-      = button_to 'Edit', edit_question_path(@question), method: :get
-      '
-      = button_to 'Delete', question_path(@question), method: :delete,  :confirm => 'Are you sure?'
+  .panel.panel-default
+    .panel-heading
+      .panel-title
+        h3= @question.title
+    .panel-body
+      p= @question.contents
+      - if current_user == @question.author
+        .btn-group
+          .btn-toolbar
+            = link_to 'Edit', edit_question_path(@question), method: :get, class: "btn btn-warning"
+            '
+            = link_to 'Delete', question_path(@question), method: :delete, class: "btn btn-danger"
+    .panel-footer
+      = render "details", question: @question
 
   h3 Answers
   
@@ -20,6 +25,7 @@
     '  There are no answers to this question.
   
   - if ! @question.answer_accepted?
+    
     h3 Add answer
   
     = form_for [@question, @answer] do |f|

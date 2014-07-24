@@ -1,16 +1,17 @@
 .answer id="answer-#{answer.id}"
-  .contents= answer.contents
-  .details
-    = render partial: "likes/like", locals: {answer: answer}
-    '
-    - if !answer.question.answer_accepted?
-      = form_tag({controller: "answers", action: "update", answer_id: answer.id, question_id: answer.question_id}, method: "patch") do
-        '
-        = submit_tag("Accept", id: 'accept_answer_form')
-        '
-    = "Accepted" if answer.accepted?
-    '
-    '  Answered on
-    = l(answer.created_at, format: :long)
-    '  by
-    = link_to answer.user, user_path(answer.user)
+  .panel.panel-default
+    .panel-body
+      = answer.contents
+    .panel-footer
+      .row
+        .col-md-1
+          = render partial: "likes/like", locals: {answer: answer}
+        .col-md-1
+        - if !answer.question.answer_accepted?
+          = form_tag({controller: "answers", action: "update", answer_id: answer.id, question_id: answer.question_id}, method: "patch") do
+            = submit_tag("Accept", id: 'accept_answer_form', class: "btn btn-primary")
+      = "Accepted" if answer.accepted?
+      '  Answered on
+      = l(answer.created_at, format: :long)
+      '  by
+      = link_to answer.user.username, user_path(answer.user)
