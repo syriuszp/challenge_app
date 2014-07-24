@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"su",
+				"alert-success"
+			],
+			[
 				"user",
 				"user"
 			],
@@ -27,6 +31,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/questions/show.html.slim",
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -34,6 +46,26 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"fle",
+				"FileDiffs: Menu"
+			],
+			[
+				"fi",
+				"FileDiffs: Menu"
+			],
+			[
+				"filed",
+				"FileDiffs: Menu"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
 			[
 				"p",
 				"Package Control: Install Package"
@@ -52,10 +84,6 @@
 			],
 			[
 				"P",
-				"Package Control: Install Package"
-			],
-			[
-				"pa",
 				"Package Control: Install Package"
 			]
 		],
@@ -76,16 +104,35 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
+		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/show.html.slim",
+		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/_question.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/_details.html.slim",
+		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/index.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/_form.html.slim",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/questions.css.scss",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/answers.css.scss",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss",
+		"/home/robert/projects/challenge_app/app/helpers/application_helper.rb",
+		"/home/robert/projects/challenge_app/app/views/shared/copy_header",
+		"/home/robert/projects/challenge_app/app/controllers/questions_controller.rb",
+		"/home/robert/projects/challenge_app/app/controllers/answers_controller.rb",
+		"/home/robert/projects/challenge_app/app/views/users/_question.html.slim",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/likes.css.scss",
+		"/home/robert/projects/challenge_app/app/controllers/users_controller.rb",
+		"/home/robert/projects/challenge_app/app/views/layouts/copy",
+		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss~",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/answers.css.scss~",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/bootstrap_and_overrides.css.less",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/__________application.css.scss",
-		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
-		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/_______application.css",
 		"/home/robert/projects/challenge_app/challenge_app.sublime-project",
 		"/home/robert/projects/challenge_app/app/views/users/show.html.slim",
 		"/home/robert/projects/challenge_app/spec/spec_helper.rb",
-		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
 		"/home/robert/projects/challenge_app/features/adding_username.feature",
 		"/home/robert/projects/challenge_app/features/step_definitions/adding_username_steps.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/points_steps.rb",
@@ -96,9 +143,7 @@
 		"/home/robert/projects/challenge_app/spec/factories/user_factory.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/auth_steps.rb",
-		"/home/robert/projects/challenge_app/app/helpers/application_helper.rb",
 		"/home/robert/projects/challenge_app/features/registration.feature",
-		"/home/robert/projects/challenge_app/app/controllers/users_controller.rb",
 		"/home/robert/projects/challenge_app/app/controllers/application_controller.rb",
 		"/home/robert/projects/challenge_app/app/models/user.rb",
 		"/home/robert/projects/challenge_app/config/initializers/devise.rb",
@@ -110,7 +155,6 @@
 		"/home/robert/projects/challenge_app/app/views/questions/edit.html.slim",
 		"/home/robert/projects/challenge_app/features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/app/views/users/_answer.html.slim",
-		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
 		"/home/robert/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/RubyTest/Default.sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
@@ -122,7 +166,6 @@
 		"/home/robert/projects/challenge_app/_features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/app/models/like.rb",
 		"/home/robert/projects/challenge_app/app/models/answer.rb",
-		"/home/robert/projects/challenge_app/app/controllers/answers_controller.rb",
 		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim~"
 	],
 	"find":
@@ -166,6 +209,34 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/questions/show.html.slim",
+					"settings":
+					{
+						"buffer_size": 923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								751,
+								751
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -197,7 +268,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.495614035088,
 			1.0
 		],
 		"rows":
@@ -211,6 +282,10 @@
 	{
 		"height": 454.0
 	},
+	"output.git":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -222,12 +297,48 @@
 		"selected_items":
 		[
 			[
-				"layout/a",
+				"_he",
+				"app/views/shared/_header.html.slim"
+			],
+			[
+				"ah",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"view/ques",
+				"app/views/users/_question.html.slim"
+			],
+			[
+				"shared",
+				"app/views/shared/_header.html.slim"
+			],
+			[
+				"styles/app",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"layout",
 				"app/views/layouts/application.html.slim"
 			],
 			[
 				"app",
 				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"appl",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"assets/applic",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"stylesheet/ap",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"layout/a",
+				"app/views/layouts/application.html.slim"
 			],
 			[
 				"sh",
@@ -272,10 +383,6 @@
 			[
 				"view/a",
 				"app/views/layouts/application.html.slim"
-			],
-			[
-				"ah",
-				"app/helpers/application_helper.rb"
 			],
 			[
 				"as",
@@ -328,10 +435,6 @@
 			[
 				"user",
 				"app/models/user.rb"
-			],
-			[
-				"appl",
-				"app/controllers/application_controller.rb"
 			],
 			[
 				"sche",
