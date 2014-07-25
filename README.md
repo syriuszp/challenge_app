@@ -82,11 +82,11 @@ Most of the listed features can be implemented using core mechanisms of Ruby on 
 8.  DONE ! Users collect points. New users get 100 points for free.
 9.  DONE ! When user's answer is accepted she receives 25 points, when liked she receives 5 points.
 10. DONE ! Creating a question costs 10 points.
-11. Users can set their names and it should be displayed everywhere instead of e-mail.
+11. DONE ! Users can set their names and it should be displayed everywhere instead of e-mail.
 
   Hint: User profiles are implemented using [devise](https://github.com/plataformatec/devise) gem. Check its documentation to find out how to handle additional attributes on registration and edit profile pages.
 
-12. Users can upload avatars which should be automatically scaled to 100x100px size.
+12. DONE ! Users can upload avatars which should be automatically scaled to 100x100px size.
 
   Hint: Use a gem that handles file uploads and image manipulation.
 
