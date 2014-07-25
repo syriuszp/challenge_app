@@ -30,9 +30,10 @@
   
     = form_for [@question, @answer] do |f|
   
-      .field
+      .form-group
         = f.label :contents
-        = f.text_area :contents
+        = f.text_area :contents, class: "form-control"
   
-      .actions= f.submit 'Save'
+      .form-group
+        = f.submit 'Save', class: "btn btn-default"
 
