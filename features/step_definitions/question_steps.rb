@@ -14,7 +14,7 @@ end
 
 Then(/^I should see this question$/) do
   expect(page).to have_content "A simple question"
-  expect(page).to have_content "by #{@user}"
+  expect(page).to have_content "by #{@user.username}"
 end
 
 Then(/^I should not see this question$/) do

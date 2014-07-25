@@ -12,12 +12,12 @@ end
 
 Then(/^I should see the answer on question's page$/) do
   expect(page).to have_content("This is the answer")
-  expect(page).to have_content("by #{@user}")
+  expect(page).to have_content("by #{@user.username}")
 end
 
 Then(/^I should not see the answer on question's page$/) do
   expect(page).not_to have_content("This is the answer")
-  expect(page).not_to have_content("by #{@user}")
+  expect(page).not_to have_content("by #{@user.username}")
 end
 
 And(/^There is answer to that question$/) do

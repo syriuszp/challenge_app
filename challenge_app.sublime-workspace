@@ -79,7 +79,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 448.0
+		"width": 484.0
 	},
 	"console":
 	{
@@ -96,6 +96,13 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/features/answers.feature",
+		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim",
+		"/home/robert/projects/challenge_app/features/step_definitions/answers_steps.rb",
+		"/home/robert/projects/challenge_app/features/liking_answers.feature",
+		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
+		"/home/robert/projects/challenge_app/features/questions.feature",
+		"/home/robert/projects/challenge_app/features/step_definitions/question_steps.rb",
 		"/home/robert/projects/challenge_app/app/views/devise/registrations/edit.html.slim",
 		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
 		"/home/robert/projects/challenge_app/app/models/question.rb",
@@ -121,7 +128,6 @@
 		"/home/robert/projects/challenge_app/public/500.html",
 		"/home/robert/projects/challenge_app/config/environments/development.rb",
 		"/home/robert/projects/challenge_app/db/schema.rb",
-		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim",
 		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
 		"/home/robert/projects/challenge_app/app/views/questions/index.html.slim",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/questions.css.scss",
@@ -146,14 +152,12 @@
 		"/home/robert/projects/challenge_app/features/step_definitions/registration_steps.rb",
 		"/home/robert/projects/challenge_app/features/points.feature",
 		"/home/robert/projects/challenge_app/spec/factories/user_factory.rb",
-		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
 		"/home/robert/projects/challenge_app/features/step_definitions/auth_steps.rb",
 		"/home/robert/projects/challenge_app/features/registration.feature",
 		"/home/robert/projects/challenge_app/config/initializers/devise.rb",
 		"/home/robert/projects/challenge_app/config/locales/devise.en.yml",
 		"/home/robert/projects/challenge_app/db/migrate/20140722080747_add_username_to_users.rb",
 		"/home/robert/projects/challenge_app/app/views/questions/edit.html.slim",
-		"/home/robert/projects/challenge_app/features/liking_answers.feature",
 		"/home/robert/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/RubyTest/Default.sublime-keymap",
 		"/home/robert/.config/sublime-text-2/Packages/User/RubyTest.sublime-settings",
@@ -268,6 +272,26 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"la",
+				"features/step_definitions/liking_answer_steps.rb"
+			],
+			[
+				"_l",
+				"app/views/likes/_like.html.slim"
+			],
+			[
+				"fa",
+				"features/answers.feature"
+			],
+			[
+				"as",
+				"features/step_definitions/answers_steps.rb"
+			],
+			[
+				"qs",
+				"features/step_definitions/question_steps.rb"
+			],
 			[
 				"qso",
 				"app/views/questions/show.html.slim"
@@ -397,10 +421,6 @@
 				"app/views/layouts/application.html.slim"
 			],
 			[
-				"as",
-				"features/step_definitions/auth_steps.rb"
-			],
-			[
 				"",
 				"spec/factories/user_factory.rb"
 			],
@@ -487,10 +507,6 @@
 			[
 				"las",
 				"features/step_definitions/liking_answer_steps.rb"
-			],
-			[
-				"la",
-				"features/liking_answers.feature"
 			],
 			[
 				"lik",
