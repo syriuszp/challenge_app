@@ -1,5 +1,8 @@
 .user id="user-#{@user.id}"
   h2= @user.username
+  '
+  = image_tag @user.avatar.url(:medium)
+  '
   h5= pluralize(@user.points,'points')
 
   .questions

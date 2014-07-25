@@ -15,3 +15,5 @@
       = l(answer.created_at, format: :long)
       '  by
       = link_to answer.user.username, user_path(answer.user)
+      '
+      = image_tag answer.user.avatar.url(:mini)

@@ -52,7 +52,11 @@ GEM
       uniform_notifier (>= 1.6.0)
     celluloid (0.15.2)
       timers (~> 1.1.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
     cliver (0.3.2)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     code_analyzer (0.4.5)
       sexp_processor
     codeclimate-test-reporter (0.3.0)
@@ -136,6 +140,11 @@ GEM
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     pg (0.17.1)
     poltergeist (1.5.1)
       capybara (~> 2.1)
@@ -289,6 +298,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   newrelic_rpm
+  paperclip (~> 4.1)
   pg
   poltergeist (~> 1.5.0)
   rails (= 4.1.1)
