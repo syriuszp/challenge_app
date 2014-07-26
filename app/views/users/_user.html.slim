@@ -1,0 +1,27 @@
+.user id="user-#{user.id}"
+li.list-group-item
+	.row
+		.col-md-3
+			= image_tag user.avatar.url(:thumb)
+			'
+			dl
+				dt
+					= user.username
+				dt
+					btn.btn-primary.btn-xs
+					  span.glyphicon.glyphicon-star
+						'Star
+		.col-md-9
+			ul.list-group
+				li.list-group-item
+					' Points:
+					span.badge
+						=user.points
+				li.list-group-item
+					' Questions:
+					span.badge
+						=Question.where(user_id: user.id).count
+				li.list-group-item
+					' Answers:
+					span.badge
+						=Answer.where(user_id: user.id).count

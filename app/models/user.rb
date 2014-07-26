@@ -25,7 +25,6 @@ class User < ActiveRecord::Base
     end
   end
 
-
   def login=(login)
       @login = login
   end

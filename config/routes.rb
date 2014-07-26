@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   
   resources :answers, only: [:update]
   
-  resources :users, only: [:show]
+  resources :users, only: [:show, :index]
   
   resources :likes, only: [:create]
 
