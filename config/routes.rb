@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   resources :questions do
     resources :answers, only: [:create]
   end
-  
+
   resources :answers, only: [:update]
-  
+
   resources :users, only: [:show, :index]
-  
+
   resources :likes, only: [:create]
 
   # The priority is based upon order of creation: first created -> highest priority.

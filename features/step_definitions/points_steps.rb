@@ -12,7 +12,7 @@ Given(/^I have (\d+) points$/) do |points|
 end
 
 Given(/^I create (\d+) questions$/) do |a|
-  a.to_i.times do 
+  a.to_i.times do
     steps %Q{When I create a question}
   end
 end

@@ -1,5 +1,5 @@
 .question id="question-#{@question.id}"
-  
+
   h3 Question
 
   .panel.panel-default
@@ -18,22 +18,22 @@
       = render "details", question: @question
 
   h3 Answers
-  
+
   - if @question.answers.any?
     = render @question.answers.includes(:user)
   - else
     '  There are no answers to this question.
-  
+
   - if ! @question.answer_accepted?
-    
+
     h3 Add answer
-  
+
     = form_for [@question, @answer] do |f|
-  
+
       .form-group
         = f.label :contents
         = f.text_area :contents, class: "form-control"
-  
+
       .form-group
         = f.submit 'Save', class: "btn btn-default"
 

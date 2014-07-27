@@ -31,7 +31,7 @@ Then(/^I do not see "(.*?)" link on this question's page$/) do |link|
     expect(page).not_to have_content link
   else
     expect(page).not_to have_link eval("#{link.downcase}_question_path(@question)")
-  end  
+  end
 end
 
 Given(/^I created a question$/) do
@@ -55,7 +55,7 @@ end
 
 When(/^I press "(.*?)" link$/) do |link|
   visit question_path @question
-  
+
   click_on link
 end
 

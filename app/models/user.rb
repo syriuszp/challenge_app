@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
 
   has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>", :mini => "35x35>" }, :default_url => "/images/:style/missing.png"
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
-  
+
 
   has_many :questions
   has_many :answers
@@ -36,24 +36,24 @@ class User < ActiveRecord::Base
   def to_s
     email
   end
-  
+
   def pay_for_question
     self.points -= 10
     self.save
   end
-  
+
   def enough_for_question?
-     self.points >= 10 ? true : false   
+     self.points >= 10 ? true : false
   end
-  
+
   def earn_for_like
     self.points += 5
     self.save
   end
-  
+
   def earn_for_accept
     self.points += 25
     self.save
   end
-  
+
 end

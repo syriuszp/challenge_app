@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   def index
     #@questions = Question.all
-    @questions = Question.all.includes :user 
+    @questions = Question.all.includes :user
   end
 
   def show
@@ -26,7 +26,7 @@ class QuestionsController < ApplicationController
       current_user.pay_for_question
       redirect_to @question, notice: 'Question was successfully created.'
     else
-      flash.now[:error] = "#{current_user.points} points is not enough" 
+      flash.now[:error] = "#{current_user.points} points is not enough"
       #TO DO report other saving error reasons
       render :new
     end
@@ -42,12 +42,12 @@ class QuestionsController < ApplicationController
 
   def destroy
     if @question.destroy
-      #flash.now[:notice] = 'Question was successfully destroyed.' 
+      #flash.now[:notice] = 'Question was successfully destroyed.'
       #render :index
       redirect_to questions_url, notice: 'Question was successfully destroyed.'
-    else  
+    else
       redirect_to question_url, alert: 'Could not destoy the question'
-    end  
+    end
   end
 
   private
