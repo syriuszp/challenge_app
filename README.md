@@ -1,74 +1,6 @@
-# Challenge App
+## Training application
 
-[![Code Climate](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/gpa.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
-
-[![Test Coverage](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/coverage.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
-
-
-Hello, there! This is a challenge application that will test your practical knowledge of following tools:
-
-* Ruby programming language
-* Ruby on Rails web framework
-* Git version control system
-
-## What to do
-
-1. Get the code
-
-  Before you start you need have [git](http://git-scm.com/) installed on your machine. If you're not familiar with it yet, just take a [CodeSchool's free course](https://www.codeschool.com/courses/try-git). It's short and fun.
-
-  When ready, clone this repository. Please do not fork it, because it would make your code visible to other challengers. We don't want this.
-  
-  Issue the following command from the console.
-
-    `git clone --origin academy https://github.com/hussar-academy/challenge_app`
-
-  If you don't have a GitHub account yet, now is the perfect time to create one. Then create a repository named `challenge_app` and push the code.
-
-    ```
-    git remote add origin git@github.com:your-username/challenge_app.git
-    git push --set-upstream origin master
-    ```
-
-2. Install ruby
-
-  The actual procedure will depend on your operating system. If you're on OS X or Linux (recommended development platforms) consider using [RVM](https://rvm.io/) or [rbenv](https://github.com/sstephenson/rbenv). On Windows [RubyInstaller](http://rubyinstaller.org/) should do the trick. Either way you'll need ruby version 2.0 or higher.
-
-3. Install dependencies
-
-  This step is as easy as running:
-
-    `bundle`
-
-  The command will install all dependent libraries that are used in the application.
-
-4. Create database
-
-  The application is set up to use SQLite database, so you may need to install it first on your system. Then fire the command:
-
-    `bundle exec rake db:create db:migrate`
-
-  It will first create an empty database and then migrate its stucture.
-
-5. Start the application
-
-  Now you should be ready to start the application. Just use the following command and the app should be running at http://localhost:3000:
-
-    `bundle exec rails server`
-
-6. Write some code and show off your work!
-
-  From now on, you're on your own. Read the Specification and Development Guidelines below and check the Resources for hints on where to look for help.
-
-  Good luck!
-
-## Specification
-
-The application is a question and answer site with features similar to [Stack Overflow](http://stackoverflow.com) but it still needs some work.
-
-**Don't worry if you're not able to complete all the features, do as many as you can.** When you're done push your code to your GitHub repository so that we can access it and test. Bonus points for deploying the application to [Heroku](http://heroku.com). Then write us an e-mail at academy@hussa.rs with the links.
-
-Most of the listed features can be implemented using core mechanisms of Ruby on Rails, reading the framework's guildelines will surely point you in right directions. Other ones may rely on external libraries (gems).
+I'm just developing my RoR skills thanks to Monterail
 
 ### Features
 
@@ -93,7 +25,7 @@ Most of the listed features can be implemented using core mechanisms of Ruby on 
 13. Once a user reaches 1000 points, she receives Superstar badge that is visible on his profile page.
 14. Question's author receives e-mail notification when someone answers his question.
 15. User receives e-mail notification when his answer is accepted.
-16. There is a leaderboard page where users are sorted by points.
+16. DONE ! There is a leaderboard page where users are sorted by points.
 
 17. E-mails are sent via background jobs.
 
@@ -103,7 +35,7 @@ Most of the listed features can be implemented using core mechanisms of Ruby on 
 
   People don't like passwords. To make it easy for them many sites allow logging in with Facebook, Twitter or GitHub accounts in a secure way. We're going to use just GitHub.
   
-19. Liking answers should not reload the page.
+19. DONE ! Liking answers should not reload the page.
 
   Let's improve user experience a bit. When user likes an answer he should immediately see the result without reloading the whole page. Hint: Try using jQuery javascript library to perform AJAX requests.
   
@@ -118,36 +50,6 @@ Most of the listed features can be implemented using core mechanisms of Ruby on 
 3. We're using [slim](http://slim-lang.com/) templating engine for views, not ERB which is a default in Ruby world. It's quite easy, but if you don't feel comfortable, feel free to use ERB. The same thing stands for other gems. It's your code, use whatever suits you.
 4. Some features are defined in files in `features/features` directory. If you're curious, they're written in Cucumber and this is executable code. You can run it with `bundle exec cucumber` and check if your code satisfies these definitions.
 5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD). We really mean it! There's nothing wrong in seeking advice. (Please pay attention to the topic message)
-
-## Resources
-
-Here's the list of useful resources that might help you on your journey.
-
-### Ruby
-
-* http://iwanttolearnruby.com
-* https://www.codeschool.com/paths/ruby
-
-### Ruby on Rails
-
-* http://guides.rubyonrails.org
-* http://api.rubyonrails.org
-* http://railscasts.com
-
-### Git
-
-* https://www.codeschool.com/courses/try-git
-* https://try.github.io
-* https://www.atlassian.com/git/tutorial
-* http://git-scm.com/book
-
-### Heroku
-
-* https://devcenter.heroku.com/articles/getting-started-with-rails3
-
-### Other
-
-* https://github.com/monterail/guidelines - Our own set of web development guildelines and best practices
 
 ## License
 
