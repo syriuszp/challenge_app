@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"n",
+				"new_like"
+			],
+			[
 				"su",
 				"alert-success"
 			],
@@ -31,6 +35,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/controllers/likes_controller.rb",
+			"settings":
+			{
+				"buffer_size": 717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/likes/_like.html.slim",
+			"settings":
+			{
+				"buffer_size": 266,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/likes/create.js.erb",
+			"settings":
+			{
+				"buffer_size": 105,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -96,6 +124,19 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/README.md",
+		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
+		"/home/robert/projects/challenge_app/app/views/likes/create.js.slim",
+		"/home/robert/projects/challenge_app/app/assets/javascripts/likes.js.coffee",
+		"/home/robert/projects/challenge_app/app/views/likes/create.js.erb~",
+		"/home/robert/projects/challenge_app/app/assets/javascripts/like.js",
+		"/home/robert/projects/challenge_app/app/controllers/questions_controller.rb",
+		"/home/robert/projects/challenge_app/app/views/questions/show.html.slim",
+		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
+		"/home/robert/projects/challenge_app/db/schema.rb",
+		"/home/robert/projects/challenge_app/db/migrate/20140727141646_remove_index_from_likes.rb",
+		"/home/robert/projects/challenge_app/db/migrate/20140727141205_add_index_to_likes.rb",
+		"/home/robert/projects/challenge_app/db/migrate/20140727140734_add_index_to_likes.rb",
 		"/home/robert/projects/challenge_app/app/views/questions/_details.html.slim",
 		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
 		"/home/robert/projects/challenge_app/app/models/user.rb",
@@ -103,7 +144,6 @@
 		"/home/robert/projects/challenge_app/app/models/question.rb",
 		"/home/robert/projects/challenge_app/app/controllers/answers_controller.rb",
 		"/home/robert/projects/challenge_app/app/helpers/likes_helper.rb",
-		"/home/robert/projects/challenge_app/app/views/answers/_answer.html.slim",
 		"/home/robert/projects/challenge_app/app/views/users/show.html.slim",
 		"/home/robert/projects/challenge_app/app/views/users/_answer.html.slim",
 		"/home/robert/projects/challenge_app/heroku.commands",
@@ -129,7 +169,6 @@
 		"/home/robert/projects/challenge_app/features/questions.feature",
 		"/home/robert/projects/challenge_app/features/step_definitions/question_steps.rb",
 		"/home/robert/projects/challenge_app/app/views/devise/registrations/edit.html.slim",
-		"/home/robert/projects/challenge_app/app/views/questions/show.html.slim",
 		"/home/robert/projects/challenge_app/app/views/devise/registrations/new.html.slim",
 		"/home/robert/projects/challenge_app/app/views/devise/sessions/new.html.slim",
 		"/home/robert/projects/challenge_app/app/views/questions/_form.html.slim",
@@ -141,15 +180,12 @@
 		"/home/robert/projects/challenge_app/public/robots.txt",
 		"/home/robert/projects/challenge_app/public/500.html",
 		"/home/robert/projects/challenge_app/config/environments/development.rb",
-		"/home/robert/projects/challenge_app/db/schema.rb",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/questions.css.scss",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/answers.css.scss",
 		"/home/robert/projects/challenge_app/app/helpers/application_helper.rb",
 		"/home/robert/projects/challenge_app/app/views/shared/copy_header",
-		"/home/robert/projects/challenge_app/app/controllers/questions_controller.rb",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/likes.css.scss",
 		"/home/robert/projects/challenge_app/app/views/layouts/copy",
-		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss~",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/answers.css.scss~",
 		"/home/robert/projects/challenge_app/app/assets/stylesheets/bootstrap_and_overrides.css.less",
@@ -216,11 +252,93 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/controllers/likes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								497,
+								497
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "app/views/likes/_like.html.slim",
+					"settings":
+					{
+						"buffer_size": 266,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/likes/create.js.erb",
+					"settings":
+					{
+						"buffer_size": 105,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -252,7 +370,7 @@
 		"cols":
 		[
 			0.0,
-			0.454497023218,
+			0.459991528712,
 			1.0
 		],
 		"rows":
@@ -280,6 +398,50 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"_l",
+				"app/views/likes/_like.html.slim"
+			],
+			[
+				"_a",
+				"app/views/answers/_answer.html.slim"
+			],
+			[
+				"qs",
+				"app/views/questions/show.html.slim"
+			],
+			[
+				"qc",
+				"app/controllers/questions_controller.rb"
+			],
+			[
+				"lc",
+				"app/controllers/likes_controller.rb"
+			],
+			[
+				"sc",
+				"db/schema.rb"
+			],
+			[
+				"20140727141646_remov",
+				"db/migrate/20140727141646_remove_index_from_likes.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"20140727141205_add_index_to_likes",
+				"db/migrate/20140727141205_add_index_to_likes.rb"
+			],
+			[
+				"20140727140734_add_index_to_",
+				"db/migrate/20140727140734_add_index_to_likes.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
 			[
 				"ac",
 				"app/controllers/answers_controller.rb"
@@ -381,16 +543,8 @@
 				"features/step_definitions/liking_answer_steps.rb"
 			],
 			[
-				"_l",
-				"app/views/likes/_like.html.slim"
-			],
-			[
 				"fa",
 				"features/answers.feature"
-			],
-			[
-				"qs",
-				"features/step_definitions/question_steps.rb"
 			],
 			[
 				"qso",
@@ -553,10 +707,6 @@
 				"app/models/user.rb"
 			],
 			[
-				"sche",
-				"db/schema.rb"
-			],
-			[
 				"201407",
 				"db/migrate/20140722080747_add_username_to_users.rb"
 			],
@@ -614,7 +764,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 308.0,
 	"status_bar_visible": true
 }

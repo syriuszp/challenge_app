@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/gpa.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
+[![Test Coverage](https://codeclimate.com/repos/53ca49ba69568036df008861/badges/92a10b8438ef2bed5e79/coverage.png)](https://codeclimate.com/repos/53ca49ba69568036df008861/feed)
+
 ## Training application
 
 I'm just developing my RoR skills thanks to Monterail
