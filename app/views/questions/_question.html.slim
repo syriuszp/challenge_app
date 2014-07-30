@@ -1,7 +1,22 @@
 .question id="question-#{question.id}"
 .panel.panel-default
   .panel-heading
-    .panel-title
+    .panel-title style="margin-top: -18px; margin-bottom: -18px"
 	    .btn.btn-link.btn-lg= link_to question.title, question_path(question)
-    .panel-body
-		  = render "questions/details", question: question
+  .panel-body style="margin-top: -10px; margin-bottom: -10px"
+	  row
+		  .col-md-7
+			  h5=question.contents
+			  hr
+			  h5.text-right= render "questions/details", question: question
+		  .col-md-5
+			  ul
+				  li.list-group-item 
+						  'Accepted?
+						  .badge Yes
+				  li.list-group-item 
+						  'Answers:
+						  .badge 10
+				  li.list-group-item 
+						  'Likes:
+						  .badge 26
