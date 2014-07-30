@@ -17,3 +17,7 @@
 
 # Ignore local config files
 /config/database.yml
+
+# Ignore sublime editor file
+/challenge_app.sublime-project
+/challenge_app.sublime-workspace
