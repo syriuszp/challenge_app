@@ -12,6 +12,10 @@ html
   	.container
       .row
         .col-md-7
+          - if flash.present?
+            - flash.each do |key, message|
+              div class=("alert #{bootstrap_class_for(key)}")
+                = message
           = yield
         .col-md-1
         .col-md-3

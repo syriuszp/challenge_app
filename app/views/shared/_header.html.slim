@@ -1,21 +1,28 @@
-nav.navbar.navbar-default.navbar-fixed-top role="navigation"
+.navbar.navbar-inverse.navbar-fixed-top role="navigation"
   .container
-    ul.nav.nav-pills
-      li= link_to "Challenge App", root_path
-      -if user_signed_in?
-        li= link_to "Edit profile", edit_user_registration_path
-        li= link_to "Sign out", destroy_user_session_path, method: :delete
-        li= link_to 'New Question', new_question_path
-        li= link_to 'Leaderboard', users_path
-        li.p.navbar-text.navbar-right= "Signed in as #{current_user.username}"
-        li.media.pull-right= image_tag current_user.avatar.url(:mini)
-        '
+    .navbar-header
+      button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"
+        span class="sr-only" 
+          ' Toggle navigation
+        span class="icon-bar"
+        span class="icon-bar"
+        span class="icon-bar"
 
-      -else
-        li= link_to "Sign in", new_user_session_path
-        li= link_to "Sign up", new_user_registration_path
+      .navbar-brand 
+        = link_to "Challenge App", root_path
 
-    - if flash.present?
-      - flash.each do |key, message|
-        div class=("alert #{bootstrap_class_for(key)}")
-          = message
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        -if user_signed_in?
+          li= link_to 'New Question', new_question_path
+          li= link_to 'Leaderboard', users_path
+        -else
+
+      ul.nav.navbar-nav.navbar-right
+        -if user_signed_in?
+          li= link_to "Edit profile", edit_user_registration_path
+          li= link_to "Sign out", destroy_user_session_path, method: :delete
+          li.media= image_tag current_user.avatar.url(:mini), style: "margin-bottom: 7px;"
+        -else
+          li.active= link_to "Sign in", new_user_session_path
+          li= link_to "Sign up", new_user_registration_path
