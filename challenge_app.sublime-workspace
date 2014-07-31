@@ -36,26 +36,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/likes_controller.rb",
+			"file": "app/controllers/questions_controller.rb",
 			"settings":
 			{
-				"buffer_size": 717,
+				"buffer_size": 1660,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/likes/_like.html.slim",
+			"file": "app/views/questions/show.html.slim",
 			"settings":
 			{
-				"buffer_size": 266,
+				"buffer_size": 973,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/likes/create.js.erb",
+			"file": "app/views/questions/_question.html.slim",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 645,
 				"line_ending": "Unix"
 			}
 		}
@@ -124,6 +124,15 @@
 	},
 	"file_history":
 	[
+		"/home/robert/projects/challenge_app/app/models/answer.rb",
+		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
+		"/home/robert/projects/challenge_app/app/views/questions/index.html.slim",
+		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
+		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss",
+		"/home/robert/projects/challenge_app/app/controllers/application_controller.rb",
+		"/home/robert/projects/challenge_app/app/controllers/likes_controller.rb",
+		"/home/robert/projects/challenge_app/app/views/likes/create.js.erb",
+		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim",
 		"/home/robert/projects/challenge_app/README.md",
 		"/home/robert/projects/challenge_app/app/assets/javascripts/application.js",
 		"/home/robert/projects/challenge_app/app/views/likes/create.js.slim",
@@ -138,9 +147,7 @@
 		"/home/robert/projects/challenge_app/db/migrate/20140727141205_add_index_to_likes.rb",
 		"/home/robert/projects/challenge_app/db/migrate/20140727140734_add_index_to_likes.rb",
 		"/home/robert/projects/challenge_app/app/views/questions/_details.html.slim",
-		"/home/robert/projects/challenge_app/app/views/shared/_header.html.slim",
 		"/home/robert/projects/challenge_app/app/models/user.rb",
-		"/home/robert/projects/challenge_app/app/models/answer.rb",
 		"/home/robert/projects/challenge_app/app/models/question.rb",
 		"/home/robert/projects/challenge_app/app/controllers/answers_controller.rb",
 		"/home/robert/projects/challenge_app/app/helpers/likes_helper.rb",
@@ -156,14 +163,10 @@
 		"/home/robert/projects/challenge_app/features/step_definitions/leaderboard_steps.rb",
 		"/home/robert/projects/challenge_app/app/views/questions/_question.html.slim",
 		"/home/robert/projects/challenge_app/app/views/users/index.html.slim",
-		"/home/robert/projects/challenge_app/app/views/layouts/application.html.slim",
 		"/home/robert/projects/challenge_app/app/controllers/users_controller.rb",
 		"/home/robert/projects/challenge_app/app/views/users/_user.html.slim",
-		"/home/robert/projects/challenge_app/app/assets/stylesheets/application.css.scss",
-		"/home/robert/projects/challenge_app/app/views/questions/index.html.slim",
 		"/home/robert/projects/challenge_app/features/step_definitions/points_steps.rb",
 		"/home/robert/projects/challenge_app/features/answers.feature",
-		"/home/robert/projects/challenge_app/app/views/likes/_like.html.slim",
 		"/home/robert/projects/challenge_app/features/liking_answers.feature",
 		"/home/robert/projects/challenge_app/features/step_definitions/liking_answer_steps.rb",
 		"/home/robert/projects/challenge_app/features/questions.feature",
@@ -175,7 +178,6 @@
 		"/home/robert/projects/challenge_app/app/views/users/_question.html.slim",
 		"/home/robert/projects/challenge_app/app/views/users/_answer.html.slim~",
 		"/home/robert/projects/challenge_app/public/system/users/avatars/000/000/018/thumb/navbar.jpg",
-		"/home/robert/projects/challenge_app/app/controllers/application_controller.rb",
 		"/home/robert/projects/challenge_app/public/404.html",
 		"/home/robert/projects/challenge_app/public/robots.txt",
 		"/home/robert/projects/challenge_app/public/500.html",
@@ -231,6 +233,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"png",
 			"field",
 			"focus"
 		],
@@ -250,22 +253,23 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/likes_controller.rb",
+					"file": "app/controllers/questions_controller.rb",
 					"settings":
 					{
-						"buffer_size": 717,
+						"buffer_size": 1660,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								306,
+								306
 							]
 						],
 						"settings":
@@ -275,7 +279,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -283,55 +287,57 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "app/views/likes/_like.html.slim",
+					"file": "app/views/questions/show.html.slim",
 					"settings":
 					{
-						"buffer_size": 266,
+						"buffer_size": 973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								266,
-								266
+								492,
+								492
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
-							"tab_size": 2
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/likes/create.js.erb",
+					"file": "app/views/questions/_question.html.slim",
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 645,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20,
-								20
+								438,
+								438
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Ruby Slim/Syntaxes/Ruby Slim.tmLanguage",
+							"tab_size": 2
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -399,16 +405,52 @@
 		"selected_items":
 		[
 			[
+				"cq",
+				"app/controllers/questions_controller.rb"
+			],
+			[
+				"ma",
+				"app/models/answer.rb"
+			],
+			[
+				"_q",
+				"app/views/questions/_question.html.slim"
+			],
+			[
+				"qi",
+				"app/views/questions/index.html.slim"
+			],
+			[
+				"qs",
+				"app/views/questions/show.html.slim"
+			],
+			[
+				"q",
+				"app/views/users/_question.html.slim"
+			],
+			[
+				"ap",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"_he",
+				"app/views/shared/_header.html.slim"
+			],
+			[
+				"views/app",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"app",
+				"app/controllers/application_controller.rb"
+			],
+			[
 				"_l",
 				"app/views/likes/_like.html.slim"
 			],
 			[
 				"_a",
 				"app/views/answers/_answer.html.slim"
-			],
-			[
-				"qs",
-				"app/views/questions/show.html.slim"
 			],
 			[
 				"qc",
@@ -463,10 +505,6 @@
 				"app/views/answers/_answer.html.slim"
 			],
 			[
-				"ma",
-				"app/models/answer.rb"
-			],
-			[
 				"u/_a",
 				"app/views/users/_answer.html.slim"
 			],
@@ -495,10 +533,6 @@
 				"app/views/layouts/application.html.slim"
 			],
 			[
-				"ap",
-				"app/assets/stylesheets/application.css.scss"
-			],
-			[
 				"ui",
 				"app/views/users/index.html.slim"
 			],
@@ -509,10 +543,6 @@
 			[
 				"us",
 				"app/views/users/show.html.slim"
-			],
-			[
-				"_q",
-				"app/views/questions/_question.html.slim"
 			],
 			[
 				"quest",
@@ -579,10 +609,6 @@
 				"config/environments/development.rb"
 			],
 			[
-				"_he",
-				"app/views/shared/_header.html.slim"
-			],
-			[
 				"ah",
 				"app/helpers/application_helper.rb"
 			],
@@ -601,10 +627,6 @@
 			[
 				"layout",
 				"app/views/layouts/application.html.slim"
-			],
-			[
-				"app",
-				"app/assets/stylesheets/application.css.scss"
 			],
 			[
 				"appl",
@@ -764,7 +786,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 308.0,
 	"status_bar_visible": true
 }

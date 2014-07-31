@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
 
   def index
     #@questions = Question.all
-    @questions = Question.all.includes :user
+    @questions = Question.all.includes [:user, :answers]
   end
 
   def show
