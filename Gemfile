@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 # core
 gem 'rails', '4.1.1'
 gem 'devise'
+gem 'omniauth-github'
 
 group :production do
   gem 'pg'
