@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140727140734) do
+ActiveRecord::Schema.define(version: 20140803145413) do
 
   create_table "answers", force: true do |t|
     t.integer  "question_id"
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20140727140734) do
   end
 
   add_index "likes", ["answer_id"], name: "index_likes_on_answer_id"
-  add_index "likes", ["user_id"], name: "index_likes_on_user_id"
 
   create_table "questions", force: true do |t|
     t.string   "title"
@@ -60,6 +59,8 @@ ActiveRecord::Schema.define(version: 20140727140734) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

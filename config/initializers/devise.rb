@@ -255,4 +255,5 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   #RB
   config.authentication_keys = [:username ]
+  config.omniauth :github, "b2f4aa06c3aecc03f4ba", "ce3dac377f8c843f3df37b3a72af574e5c582dc6"
 end
